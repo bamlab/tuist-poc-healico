@@ -54,7 +54,7 @@ extension Project {
             name: name,
             platform: platform,
             product: .app,
-            bundleId: "io.tuist.\(name)",
+            bundleId: "tech.bam.\(name)",
             infoPlist: .extendingDefault(with: infoPlist),
             sources: ["Targets/\(name)/Sources/**"],
             resources: ["Targets/\(name)/Resources/**"],
@@ -65,7 +65,7 @@ extension Project {
             name: "\(name)Tests",
             platform: platform,
             product: .unitTests,
-            bundleId: "io.tuist.\(name)Tests",
+            bundleId: "tech.bam.\(name)Tests",
             infoPlist: .default,
             sources: ["Targets/\(name)/Tests/**"],
             dependencies: [
